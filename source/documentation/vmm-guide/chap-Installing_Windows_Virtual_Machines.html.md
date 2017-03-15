@@ -195,9 +195,9 @@ The oVirt guest agents and drivers are installed on Windows virtual machines usi
 
 **Note:** Updated versions of the `oVirt-tools-setup.iso` ISO file must be manually attached to running Windows virtual machines to install updated versions of the tools and drivers. If the APT service is enabled on virtual machines, the updated ISO files will be automatically attached.
 
-**Note:** If you install the guest agents and drivers from the command line or as part of a deployment tool such as Windows Deployment Services, you can append the options `ISSILENTMODE` and `ISNOREBOOT` to `oVirt-toolsSetup.exe` to silently install the guest agents and drivers and prevent the machine on which they have been installed from rebooting immediately after installation. The machine can then be rebooted later once the deployment process is complete.
+**Note:** If you install the guest agents and drivers from the command line or as part of a deployment tool such as Windows Deployment Services, you can append the options /S to `oVirt-toolsSetup.exe` to silently install the guest agents and drivers and prevent the machine on which they have been installed from rebooting immediately after installation. The machine can then be rebooted later once the deployment process is complete.
 
-    D:\oVirt-toolsSetup.exe ISSILENTMODE ISNOREBOOT
+    D:\oVirt-toolsSetup.exe /S
 
 **Installing the Guest Agents and Drivers on Windows**
 
